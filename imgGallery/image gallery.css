@@ -1,0 +1,20 @@
+h6
+{
+	height : 110px;
+	cursor : pointer;
+	text-align : center;
+}
+
+img
+{
+	height : 100%;
+	padding : 10px;
+}
+
+h5
+{
+	height : 500px;
+	text-align : center;
+	font-family : Comic Sans MS;
+	font-size : 24pt;
+}

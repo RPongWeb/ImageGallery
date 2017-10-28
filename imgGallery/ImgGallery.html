@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!-- Ricky Pong -->
+<html>
+	<head>
+		<title> </title>
+		<link rel = "stylesheet" href = "image gallery.css" />
+		<style> html{background-color:black; color : white;} </style>
+		<script> 
+			function initialize()
+			{
+				jimage = document.getElementById("dimg");
+				jspan = document.getElementById("dspan");
+			}
+			
+			function display(image,text)
+			{
+				jimage.src = image;
+				jspan.innerHTML = text;
+			}
+		</script>
+	</head>
+	<body onload = "initialize();">
+		<h6>
+			<img onclick = "display('climate.jpg','Picture of Global Temperatures');" src = "climate.jpg" />
+			<img onclick = "display('polar.jpg','Polar Bear losing its habitat');" src = "polar.jpg" />
+			<img onclick = "display('deforestation.jpg','A field that was filled with trees is now empty.');" src = "deforestation.jpg" />
+			<img onclick = "display('sealevels.jpg','Map of homes lost due to future effects of climate change.');" src = "sealevels.jpg" />	
+		</h6>	
+		<h5>
+			<img id = "dimg" src = "" />
+			<br />
+			<span id = "dspan"> </span>	
+		</h5>								
+	</body>
+</html>
